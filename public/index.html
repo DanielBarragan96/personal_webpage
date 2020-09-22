@@ -87,20 +87,18 @@
     </style>
   </head>
   <body class="bg-dark">
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="navbar" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Daniel Barragán <span class="sr-only">(current)</span></a
-            >
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"
+            >Daniel Barragán <span class="sr-only">(current)</span></a
+          >
+        </li>
+      </ul>
     </nav>
 
     <div class="jumbotron text-xs-center">
-      <h1 class="display-5">Welcome to my site</h1>
+      <h1 class="display-4">Welcome to my site</h1>
       <p class="lead">
         This website is used as a support tool to share my achievements,
         projects and skills.
@@ -196,11 +194,27 @@
       ></iframe>
     </div> -->
 
-    <footer class="text-muted">
+    <footer class="">
       <div class="container">
-        <p class="pull-xs-right">
-          <a href="#">Back to top</a>
-        </p>
+        <p></p>
+        <form
+          id="send_email_form"
+          enctype="text/plain"
+          method="post"
+          action="mailto:barragan.a.daniel@gmail.com?subject=Hi"
+        >
+          <p class="white-text">
+            Send me an
+            <a
+              type="submit"
+              href="#"
+              onclick="document.getElementById('send_email_form').submit()"
+              >email</a
+            >
+          </p>
+        </form>
+
+        <p class="pull-xs-right white-text">Back to <a href="#">top</a></p>
 
         <p class="white-text">
           Coded by
